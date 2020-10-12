@@ -1,8 +1,11 @@
-var connection = mysql.createConnection({
+
+var mysql = require("mysql");
+
+const connection = mysql.createConnection({
   host: "localhost",
 
   // Your port; if not 3306
-  port: 3306,
+  port: 8000,
 
   // Your username
   user: "userz",
@@ -15,3 +18,5 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
   if (err) throw err;
 });
+
+module.exports = connection;
