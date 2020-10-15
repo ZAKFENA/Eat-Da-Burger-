@@ -18,20 +18,3 @@ background-color: rgb(176, 177, 179);
   background-color: rgb(245, 121, 121);
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-{
-  box-sizing: border-box;
-}
