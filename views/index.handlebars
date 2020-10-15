@@ -1,32 +1,43 @@
 <h1>Eat-Da-Burger!</h1>
 
+<img src="/Assets/burger.png" alt="Burger" width="200px" height="200px"></img>
+
+
+
 <h2>Burgers to be devoured</h2>
-
 <ul>
-    {{#each burgers}}
-    <li>{{this}}</li>
-
-    {{/each}}
+  {{#each burgers}}
+  {{#unless devoured}}
+  <li class="li-before"><b>{{this.burger_name}}</b> <button class="devour-burger" data-id="{{this.id}}"
+      data-devoured="{{this.devoured}}">DEVOUR!</button>
+  </li>
+  {{/unless}}
+  {{/each}}
 </ul>
 
-<h2>Devoured burger</h2>
 
-{{!-- <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
+<h2>Devoured burger</h2>
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+  <li class="li-after"><b>{{this.burger_name}}</b> <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+  </li>
+  {{/if}}
   {{/each}}
-</ul> --}}
+</ul>
+
+
+
+
 
 <h2>Add a Burger</h2>
-<form class="create-form">
+<form class=" create-form">
 
-    <div class="form-group">
-        <label for="brgr">Burger Name:</label>
-        <input type="text" id="brgr" name="name">
-    </div>
+  <div class="form-group">
+    <label for="brgr">Burger Name:</label>
+    <input type="text" id="brgr" name="name">
+  </div>
 
 
-    <button type="submit">Add Burger</button>
+  <button type="submit">Add Burgers</button>
 </form>
