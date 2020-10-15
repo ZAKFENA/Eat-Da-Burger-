@@ -1,5 +1,5 @@
 {
-  "name": "1-Passport-Example",
+  "name": "1-passport-example",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -19,5 +19,14 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "sequelize": "^5.22.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZAKFENA/Eat-Da-Burger-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZAKFENA/Eat-Da-Burger-/issues"
+  },
+  "homepage": "https://github.com/ZAKFENA/Eat-Da-Burger-#readme"
 }
