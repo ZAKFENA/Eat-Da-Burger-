@@ -11,10 +11,28 @@ img {
 }
 
 .li-before {
-background-color: rgb(176, 177, 179);
-}
+    border-radius: 25px;
+    border: 2px solid #070c00;
+    padding: 20px;
+    height: 5px;
+    }
 
 .li-after{
-  background-color: rgb(245, 121, 121);
+  border-radius: 25px;
+  border: 2px solid #5cc06a;
+  padding: 20px;
+  height: 5px;
 }
 
+.delete-burger {
+  border-radius: 20px;
+}
+
+
+.devour-burger {
+  border-radius: 20px;
+}
+
+.add-burger {
+  border-radius: 20px;
+}
